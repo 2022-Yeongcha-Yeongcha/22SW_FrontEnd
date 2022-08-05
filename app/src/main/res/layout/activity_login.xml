@@ -8,7 +8,7 @@
     tools:ignore="ExtraText">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/login_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="69dp"
@@ -19,13 +19,13 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/edit_id"
+        app:layout_constraintBottom_toTopOf="@+id/login_edit_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit_id"
+        android:id="@+id/login_edit_id"
         android:layout_width="280dp"
         android:layout_height="42dp"
         android:layout_marginStart="66dp"
@@ -33,39 +33,39 @@
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="10dp"
         android:hint="아이디"
-        app:layout_constraintBottom_toTopOf="@+id/edit_pw"
+        app:layout_constraintBottom_toTopOf="@+id/login_edit_pw"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/login_app_name" />
 
     <EditText
-        android:id="@+id/edit_pw"
+        android:id="@+id/login_edit_pw"
         android:layout_width="280dp"
         android:layout_height="47dp"
         android:layout_marginStart="66dp"
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="8dp"
         android:hint="비밀번호"
-        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintBottom_toTopOf="@+id/login_login_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_id" />
+        app:layout_constraintTop_toBottomOf="@+id/login_edit_id" />
 
     <ImageView
-        android:id="@+id/or"
+        android:id="@+id/login_or_image"
         android:layout_width="334dp"
         android:layout_height="31dp"
         android:layout_marginStart="38dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="3dp"
-        app:layout_constraintBottom_toTopOf="@+id/kakao_btn"
+        app:layout_constraintBottom_toTopOf="@+id/login_kakao_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/login_login_btn"
         app:srcCompat="@drawable/or" />
 
     <ImageButton
-        android:id="@+id/login_btn"
+        android:id="@+id/login_login_btn"
         android:layout_width="285dp"
         android:layout_height="59dp"
         android:layout_marginStart="64dp"
@@ -73,14 +73,14 @@
         android:layout_marginBottom="8dp"
         android:background="#"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/or"
+        app:layout_constraintBottom_toTopOf="@+id/login_or_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_pw"
+        app:layout_constraintTop_toBottomOf="@+id/login_edit_pw"
         app:srcCompat="@drawable/login" />
 
     <ImageButton
-        android:id="@+id/google_btn"
+        android:id="@+id/login_google_btn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="30dp"
@@ -90,13 +90,13 @@
         android:background="#"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/register_btn"
-        app:layout_constraintEnd_toStartOf="@+id/kakao_btn"
-        app:layout_constraintStart_toEndOf="@+id/naver_btn"
-        app:layout_constraintTop_toBottomOf="@+id/or"
+        app:layout_constraintEnd_toStartOf="@+id/login_kakao_btn"
+        app:layout_constraintStart_toEndOf="@+id/login_naver_btn"
+        app:layout_constraintTop_toBottomOf="@+id/login_or_image"
         app:srcCompat="@drawable/google_btn" />
 
     <ImageButton
-        android:id="@+id/naver_btn"
+        android:id="@+id/login_naver_btn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="100dp"
@@ -105,15 +105,15 @@
         android:background="#"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/register_btn"
-        app:layout_constraintEnd_toStartOf="@+id/google_btn"
+        app:layout_constraintEnd_toStartOf="@+id/login_google_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/or"
+        app:layout_constraintTop_toBottomOf="@+id/login_or_image"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/naver_btn"
         android:contentDescription="TODO" />
 
     <ImageButton
-        android:id="@+id/kakao_btn"
+        android:id="@+id/login_kakao_btn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="4dp"
@@ -123,8 +123,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/google_btn"
-        app:layout_constraintTop_toBottomOf="@+id/or"
+        app:layout_constraintStart_toEndOf="@+id/login_google_btn"
+        app:layout_constraintTop_toBottomOf="@+id/login_or_image"
         app:srcCompat="@drawable/kakao_btn"
         android:contentDescription="TODO" />
 
@@ -144,7 +144,7 @@
         app:layout_constraintBottom_toTopOf="@+id/find_pw_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/naver_btn"
+        app:layout_constraintTop_toBottomOf="@+id/login_naver_btn"
         tools:ignore="RtlHardcoded" />
 
     <Button

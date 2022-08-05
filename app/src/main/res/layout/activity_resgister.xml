@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/register_back_image"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="27dp"
@@ -33,13 +33,13 @@
         android:layout_marginEnd="97dp"
         android:layout_marginBottom="34dp"
         android:background="@drawable/back"
-        app:layout_constraintBottom_toTopOf="@+id/name_txt"
+        app:layout_constraintBottom_toTopOf="@+id/register_name_txt"
         app:layout_constraintEnd_toStartOf="@+id/register_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/name_txt"
+        android:id="@+id/register_name_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
@@ -51,7 +51,7 @@
         app:layout_constraintBottom_toTopOf="@+id/name_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/register_back_image" />
 
     <EditText
         android:id="@+id/name_input"
@@ -67,7 +67,7 @@
         app:layout_constraintBottom_toTopOf="@+id/phone_num_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_txt" />
+        app:layout_constraintTop_toBottomOf="@+id/register_name_txt" />
 
     <EditText
         android:id="@+id/pw_check"
