@@ -5,23 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.example.a22sw_yeongchayeongcha.databinding.ActivityFamilycheckBinding
+import com.example.a22sw_yeongchayeongcha.databinding.ActivityInfoBinding
 
 
-class Familycheck: AppCompatActivity() {
-    lateinit var binding: ActivityFamilycheckBinding
+class Info: AppCompatActivity() {
+    lateinit var binding: ActivityInfoBinding
     lateinit var intent1: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityFamilycheckBinding.inflate(layoutInflater)
+        binding = ActivityInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.familyback.setOnClickListener{
-            val intent=Intent(this,Family3::class.java)
+        binding.imageView13.setOnClickListener{
+            val intent=Intent(this,My::class.java)
         }
 
-        binding.familysos.setOnClickListener{
+        binding.imageButton2.setOnClickListener{
             val intent=Intent(this,Sos::class.java)
         }
 

@@ -5,21 +5,27 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.example.a22sw_yeongchayeongcha.databinding.ActivityMainBinding
+import com.example.a22sw_yeongchayeongcha.databinding.ActivityFindingPwBinding
 
-
-class MainActivity: AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+class Finding_pw: AppCompatActivity() {
+    lateinit var binding: ActivityFindingPwBinding
     lateinit var intent1: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityFindingPwBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.loginText.setOnClickListener{
+        binding.findPw.setOnClickListener{
             val intent=Intent(this,temporary_fragment::class.java)
         }
+
+        binding.imageView2.setOnClickListener{
+            val intent=Intent(this,Login::class.java)
+        }
+
+
+
 
 
     }

@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.22SW_YeongchaYeongcha">
         <activity
-            android:name=".familycheck"
+            android:name="Familycheck"
             android:exported="false" />
         <activity
-            android:name=".family3"
+            android:name="Family3"
             android:exported="false" />
         <activity
-            android:name=".family2"
+            android:name="Family2"
             android:exported="false" />
         <activity
-            android:name=".family1"
+            android:name="Family1"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
