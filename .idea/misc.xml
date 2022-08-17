@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/back.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/border.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1735" />
+        <entry key="app/src/main/res/drawable/ic_sos_btn.xml" value="0.123" />
         <entry key="app/src/main/res/drawable/watering_button_gray.xml" value="0.17" />
         <entry key="app/src/main/res/layout/activity_family1.xml" value="0.2520833333333333" />
         <entry key="app/src/main/res/layout/activity_family2.xml" value="0.2520833333333333" />
@@ -18,7 +19,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/layout/activity_main_gyumin.xml" value="0.2520833333333333" />
         <entry key="app/src/main/res/layout/activity_mainmap.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_my.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/activity_my.xml" value="0.3313334147135417" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.2431900024414063" />
         <entry key="app/src/main/res/layout/activity_sos.xml" value="0.2073211669921875" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.2520833333333333" />

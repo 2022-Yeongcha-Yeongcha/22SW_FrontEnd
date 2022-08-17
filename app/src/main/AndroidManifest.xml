@@ -11,18 +11,38 @@
         android:theme="@style/Theme.22SW_YeongchaYeongcha">
         <activity
             android:name="Familycheck"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="Family3"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="Family2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="Family1"
-            android:exported="false" />
+            android:exported="true" />
+
+        <activity android:name=".Finding_pw"
+            android:exported="true"/>
+
+        <activity android:name=".Info"
+            android:exported="true"/>
+
+        <activity android:name=".Login"
+            android:exported="true"/>
+
+        <activity android:name=".MainActivity"
+            android:exported="true"/>
+
+        <activity android:name=".Register"
+            android:exported="true"/>
+
+        <activity android:name=".Sos"
+            android:exported="true"/>
+
+
         <activity
-            android:name=".MainActivity"
+            android:name=".My"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.22SW_YeongchaYeongcha.NoActionBar">
