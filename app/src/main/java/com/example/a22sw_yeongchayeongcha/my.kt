@@ -1,16 +1,34 @@
 package com.example.a22sw_yeongchayeongcha
 
+import android.content.ContentValues.TAG
 import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Base64
 import android.util.Log
 import android.widget.Toast
 import com.example.a22sw_yeongchayeongcha.databinding.ActivityMyBinding
+import java.security.MessageDigest
 
 
 class My: AppCompatActivity() {
+
+    private fun getAppKeyHash() {
+        try {
+            val info = packageManager.getPackageInfo(packageName, PackageManager.GET_SIGNATURES)
+            for (signature in info.signatures) {
+                val md: MessageDigest = MessageDigest.getInstance("SHA")
+                md.update(signature.toByteArray())
+                val hashKey = String(Base64.encode(md.digest(), 0))
+                Log.e(TAG, "해시키 : $hashKey")
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "해시키를 찾을 수 없습니다 : $e")
+        }
+    }
+
     lateinit var binding: ActivityMyBinding
-    lateinit var intent1: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +51,7 @@ class My: AppCompatActivity() {
             val intent=Intent(this,Family1::class.java)
         }
 
-        binding.imageButton8.setOnClickListener{
+        binding.familysos.setOnClickListener{
             val intent=Intent(this,Sos::class.java)
         }
 

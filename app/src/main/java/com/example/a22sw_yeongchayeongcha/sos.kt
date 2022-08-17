@@ -7,6 +7,19 @@ import android.util.Log
 import android.widget.Toast
 import com.example.a22sw_yeongchayeongcha.databinding.ActivitySosBinding
 
+/*
+verride fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding= ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        /*로그인 버튼 누르면 그 때 MainActivity.kt로 이동*/
+        binding.loginButton.setOnClickListener{
+            intent1=Intent(this,MainActivity::class.java)
+            login()
+        }
+* */
+
 
 class Sos: AppCompatActivity() {
     lateinit var binding: ActivitySosBinding
@@ -17,14 +30,15 @@ class Sos: AppCompatActivity() {
         binding = ActivitySosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imageButton5.setOnClickListener{
-            val intent=Intent(this,Sos::class.java)
+        binding.familysos.setOnClickListener{
+            val intent1=Intent(this,Sos::class.java)
         }
 
         binding.imageButton3.setOnClickListener{
-            val intent=Intent(this,MainActivity::class.java)
+            val intent1=Intent(this,MainActivity::class.java)
         }
 
 
     }
 }
+

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.a22sw_yeongchayeongcha">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <meta-data android:name="com.kakao.sdk.AppKey" android:value="0d30b72b0ddfcb698e68e68a2cd6c3c0"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -9,49 +18,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.22SW_YeongchaYeongcha">
-        <activity
-            android:name="Familycheck"
-            android:exported="true" />
-        <activity
-            android:name="Family3"
-            android:exported="true" />
-        <activity
-            android:name="Family2"
-            android:exported="true" />
-        <activity
-            android:name="Family1"
-            android:exported="true" />
-
-        <activity android:name=".Finding_pw"
-            android:exported="true"/>
-
-        <activity android:name=".Info"
-            android:exported="true"/>
-
-        <activity android:name=".Login"
-            android:exported="true"/>
-
-        <activity android:name=".MainActivity"
-            android:exported="true"/>
-
-        <activity android:name=".Register"
-            android:exported="true"/>
-
-        <activity android:name=".Sos"
-            android:exported="true"/>
-
 
         <activity
-            android:name=".My"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.22SW_YeongchaYeongcha.NoActionBar">
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Family1"></activity>
+        <activity android:name=".Family2"></activity>
+        <activity android:name=".Family3"></activity>
+        <activity android:name=".Familycheck"></activity>
+        <activity android:name=".Finding_pw"></activity>
+        <activity android:name=".Info"></activity>
+        <activity android:name=".Login"></activity>
+        <activity android:name=".My"></activity>
+        <activity android:name=".Register"></activity>
+        <activity android:name=".Sos"></activity>
+
+
     </application>
 
+
+
+
 </manifest>
+
